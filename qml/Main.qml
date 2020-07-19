@@ -1,5 +1,4 @@
 import QtQuick 2.0
-import "../js/Main.js" as MainJS
 
 Rectangle {
     id: canvas
@@ -73,15 +72,6 @@ Rectangle {
                 leftMargin: 8
             }
             text: ""
-        }
-
-        Timer {
-            interval: 500
-            running: true
-            repeat: true
-            onTriggered: {
-                time.text = MainJS.displayDateAsHHMMSS();
-            }
         }
     }
 }
