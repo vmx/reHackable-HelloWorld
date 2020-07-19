@@ -10,7 +10,6 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
     QQuickView view;
 
-    view.rootContext()->setContextProperty("screenGeometry", app.primaryScreen()->geometry());
     view.setSource(QDir(QGuiApplication::applicationDirPath()).filePath("Main.qml"));
     view.show();
 
