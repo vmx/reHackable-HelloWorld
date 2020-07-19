@@ -17,8 +17,7 @@ int main(int argc, char *argv[])
     MainView view;
 
     view.rootContext()->setContextProperty("screenGeometry", app.primaryScreen()->geometry());
-    view.engine()->addImportPath(QStringLiteral(DEPLOYMENT_PATH));
-    view.setSource(QDir(DEPLOYMENT_PATH).filePath("qml/Main.qml"));
+    view.setSource(QDir(QGuiApplication::applicationDirPath()).filePath("Main.qml"));
     view.show();
 
     qDebug() << "view shown";

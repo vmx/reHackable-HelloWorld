@@ -21,12 +21,8 @@ HEADERS += \
 SOURCES += main.cpp \
     mainview.cpp
 
-DEPLOYMENT_PATH = /usr/share/$$TARGET
-DEFINES += DEPLOYMENT_PATH=\\\"$$DEPLOYMENT_PATH\\\"
-DEFINES += QML_FOLDER=\\\"qml\\\"
-
-qml.files = qml/Main.qml
-qml.path == $$DEPLOYMENT_PATH/qml
+qml.files = Main.qml
+qml.path == ./
 INSTALLS += qml
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
