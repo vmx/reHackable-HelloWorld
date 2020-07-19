@@ -1,6 +1,9 @@
-## reHackable-HelloWorld
+reMarkable minimal render example
+=================================
 
-This is a simplified version of https://github.com/reHackable/reHackable-HelloWorld that is easier to deploy.
+A minimal example that renders "Hello World" on the reMarkable with QT using the original toolchain.
+
+This is a simplified version of https://github.com/reHackable/reHackable-HelloWorld.
 
 The build steps are quite simple (they are based on the [excellent build instructions from draft](https://github.com/dixonary/draft-reMarkable/blob/d0e21456ebf359188d73e31990a32f3de6a37c1a/INSTALL.md)
 
@@ -12,5 +15,5 @@ $ chmod +x ./oecore-x86_64-cortexa9hf-neon-toolchain-zero-gravitas-1.8-23.9.2019
 $ ./oecore-x86_64-cortexa9hf-neon-toolchain-zero-gravitas-1.8-23.9.2019.sh
 $ source <path-to-installed-toolchain/environment-setup-cortexa9hf-neon-oe-linux-gnueabi`
 $ qmake && make
-$ scp reHackable-launcher Main.qml 10.11.99.1
+$ scp minimal-render Main.qml 10.11.99.1
 ```
